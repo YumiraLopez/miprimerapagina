@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebPage</title>
+
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="estilo.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/7c1274065e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- Barra de Navegación-->
+    <header id="encabezado">
+        <h1 class="log">
+        <a href="index.html"><i class="fa-solid fa-circle-user"></i></a>
+        </h1>
+        <nav>
+            <div class="container"></div>
+
+<input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+            <ul class="links">
+                <li><a href="#index.html">Inicio</a></li>
+                <li><a href="#acerca">Acerca de mi</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <!--Contenido de la Pagina-->
+    <section id="inicio">
+<div class="content-container">
+    <div class="image-container">
+        <img src="img/animal.jpg" alt="mascotas">
+    </div>
+<div class="text-container">
+    <h2>Fundacion Tu Amigo Fiel</h2>
+    <p>Buscamos proteger la vida de perros y gatos en estado de maltrato y abandono. Les brindamos alimentos, medicamentos y albergue, con el fin de mejorar su calidad de vida y conseguirles un hogar.</p>
+</div>
+</div>
+    </section>
+
+    <section id="acerca">
+<div class="card">
+    <img src="img/adopta.jpg" alt="adopta animales">
+    <div class="card-text">
+        <h3>ADOPTA</h3>
+        <p>Te invitamos a nuestras jornadas de adopción o visita la fundación para que conozcas a tu alma gemela.Todos nuestros peludos son entregados en óptimas condiciones de salud a adoptantes responsables que se comprometan a cuidarlos por el resto de sus vidas.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/apadrina.jpg" alt="apadrina animales">
+    <div class="card-text">
+        <h3>APADRINA</h3>
+        <p>Puedes apadrinar alguno de nuestros peludos para que su estadía en nuestro refugio sea óptima. Manejamos diferentes planes de padrinos en los que puedes hacer un aporte mensual. Si estás interesado en apadrinar un Tepiano contáctanos y te daremos más detalles.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/dona.jpg" alt="dona para animales">
+    <div class="card-text">
+        <h3>DONA</h3>
+        <p>Puedes donar desde alimentos y medicinas hasta cobijas o tejas para la adecuación del refugio. También puedes compartir tiempo con los peluditos, ayudarnos en la fundación o hacer donaciones en dinero.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/difunde.jpg" alt="difunde adopciones">
+    <div class="card-text">
+        <h3>DIFUNDE</h3>
+        <p>Te invitamos a nuestras jornadas de adopción o visita la fundación para que conozcas a tu alma gemela.Todos nuestros peludos son entregados en óptimas condiciones de salud a adoptantes responsables que se comprometan a cuidarlos por el resto de sus vidas.</p>
+    </div>
+</div>
+    </section>
+
+    <section id="trabajos" class="bg-image py-5">
+        <div class="contenido">
+            <div class="overlay"></div>
+            <h2 class="text-center text-white mb-4"><b><q>Nuestros Servicios</q></b></h2>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Trabajo 1</h5>
+                            <p class="card-text">Descripción del trabajo 1.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Trabajo 2</h5>
+                            <p class="card-text">Descripción del trabajo 2.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Servicios">
+
+    </section>
+
+    <section id="contacto">
+        <body>
+            <footer class="form-header">
+              <h1>Contacto</h1>
+              <p><em>¡Esperamos tu consulta!</em></p>
+        
+              <form action="" method="get" class="formulario" id="form">
+                <div class="form-row">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" />
+                </div> 
+        
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="yumira@gmail.com"/>
+                      required
+                  </div> 
+                  
+                  <div class="form-row">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                   </div>
+        
+                   <div class="form-row">
+                    <button>Enviar</button>
+                </div>
+                <p class="alertas" id="alertas"></p>
+              </form>
+            </footer> 
+            <script src="script.js"></script>
+          </body>
+    </section>
+<!--Pie de pagina-->
+<footer>
+    <h3 >Redes Sociales</h3>
+    <ul class="social-icons">
+        <li><a href="https://www.facebook.com/tupagina" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/tupagina" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/tupagina" target="_blank">Instagram</a></li>
+        <!-- Agrega más enlaces de redes sociales según sea necesario -->
+    </ul>
+    <p>&copy; 2024 Tu Página Web. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

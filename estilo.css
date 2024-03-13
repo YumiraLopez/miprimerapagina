@@ -1,0 +1,261 @@
+/*body{
+    margin: 0;
+    padding: 0;
+}*/
+
+ol,
+ul{
+  list-style: none;  
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+ 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+      
+      
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.1em;
+}
+header nav ul li a{
+    color: white;
+}
+header a i {
+    color: white;
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+footer {
+    background-color: rgb(15, 12, 12);
+     width: 100%;
+     display: block;
+     color: white;
+    }
+
+    #inicio{
+        background-color: rgb(171, 236, 214);
+        padding: 50px;
+    }
+
+    .content-container {
+        max-width: 800px; /* Ancho máximo del contenedor */
+        margin: 0 auto; /* Centrar el contenedor en la página */
+        display: flex; /* Utilizar flexbox para organizar los elementos */
+        align-items: center; /* Centrar verticalmente los elementos */
+    }
+    .image-container{
+        flex: 1;
+    }
+
+    .image-container img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Estilos para el texto */
+.text-container {
+    flex: 1; /* Que el texto ocupe la otra mitad del contenedor */
+    padding-left: 20px; /* Espaciado a la izquierda del texto */
+}
+
+.text-container h2 {
+    color: #333; /* Color del título */
+    text-align: center;
+}
+
+.text-container p {
+    color: #666; /* Color del texto */
+    text-align: justify;
+}
+#acerca {
+    background-color: #eaeaeae8; /* Color de fondo de la sección */
+    padding: 50px; /* Espaciado interno de la sección */
+display: flex;
+justify-content: space-around;
+
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; /* Añade bordes redondeados a las imágenes */
+}
+
+.card-text {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.card-text h3 {
+    color: #333; /* Color del título de la tarjeta */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-text p {
+    color: #666; /* Color del texto de la tarjeta */
+    font-size: 14px;
+}
+
+#trabajos{
+    position: relative;
+    background: url(img/pet.jpg) center center/cover no-repeat;
+    color: rgb(255, 255, 255);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.34); /* Ajusta la opacidad según tus preferencias */
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgb(12, 12, 159); /* Efecto de sombra al pasar el ratón sobre las tarjetas */
+}
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*Pie de Pagina */
+ 
+footer {
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+footer h3{
+    color:white;
+}
+
+footer p{
+    color:white;
+}
+
+@media (max-width: 768px){
+
+    header{
+        background-color: rgb(18, 96, 96);
+    }
+
+#encabezado ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(126, 218, 218);
+    text-align: center;
+
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+}
+
+.checkbtn{
+    display: block;
+}
+#check:checked ~ ul{
+    left: 0%;
+    display: block;
+}
+
+#encabezado nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+#encabezado nav ul li a{
+    font-size: 35px;
+}
+
+#check:checked ~ .checkbtn{
+color: rgb(34, 30, 87);
+ }
+
+/*Pie de Pagina */
+ 
+footer {
+    background-color: rgb(35, 93, 95);
+    color: rgb(164, 204, 230);
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color:rgb(164, 204, 230);
+    text-decoration: none;
+    font-size: 20px;
+}
+footer h3{
+    color:rgb(164, 204, 230);
+}
+
+footer p{
+    color:rgb(164, 204, 230);
+}
+
+}
